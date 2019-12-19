@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='./style/style.css' type='text/css'>
+    <link rel='icon' href = './src/logo.png'>
+    <title>Buy Cosmetics Products & Beauty Products Online in India at Best Price | Nykaa</title>
+    <script src="js/main.js"></script>
+</head>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add new element to SPOTLIGHT</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;line-height: 200%;">
+          <input type="url" placeholder="Enter Image URL" id=link>
+          <input type='text' placeholder="Enter Offer" id=offer>
+          <input type='text' placeholder="Description" id=desc>
+          <input type="button" onclick="activate()" value="Submit">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<body>
+    <div class=fix id=header>
+        <div id=header-top>
+            <div class= header-top-strip>
+                <div class = header-left>
+                    <div class=header-left-cont>
+                        <a href=""> Beauty Bonanza: Get Your Daily Dose Of Amazing Offers  </a>
+                    </div>
+
+                </div>
+                <div class = 'header-right'>
+                    <div class=header-right-inline-block>
+                        <div class=header-right-flex id=flag>
+                            <span class=flag-ind></span>
+                            <span class=header-right-element id=india>India</span>
+                            <span id=drop-down-arrow></span>  
+                        </div>
+                    </div>
+                    <div class=header-right-inline-block>
+                        <a href=''>
+                            <div class=header-right-flex>
+                                <span class=get-app-icon></span>
+                                <span class=header-right-element>Get App</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=header-right-inline-block>
+                        <a href=''>
+                            <div class=header-right-flex>
+                                <span class=get-app-icon id=store></span>
+                                <span class=header-right-element>Store & Events</span>                </div>
+                        </a>
+                    </div>
+                    <div class=header-right-inline-block>
+                        <a href=''>
+                            <div class=header-right-flex>
+                                <span class=get-app-icon id=gift></span>
+                                <span class=header-right-element>Gift Card</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=header-right-inline-block>
+                        <a href=''>
+                            <div class=header-right-flex>
+                                <span class=get-app-icon id=help></span>
+                                <span class=header-right-element>Help</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class= header-2-cover>
+            <div id = header-2>
+                <a id = logo-svg href =''></a>
+                <a href=# class=header2-left>Categories</a>
+                <a href=# class=header2-left>Brands</a>
+                <a href=# class=header2-left>Nykaa Fashion</a>
+                <a href=# class=header2-left>Beauty Advice</a>
+                <a href=# class=header2-left>Nykaa Network</a>
+                <div class=header2-left>
+                <div class=header-2-right>
+                    <div class=search>
+                        <span class=search-icon></span>
+                        <input class=input placeholder="Search for Products, Brands etc.">
+                    </div>
+                    <a href='' class=account>
+                        <span id=account-icon>
+                        </span>
+                        <span>Account</span>
+                    </a>
+                    <a href='' class=bag>
+
+                    </a>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Add in Spotlight</button>
+
+                    <!-- Modal -->
+
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class=mv-header id=mv-header>
+        <div class=mv-header-line1>
+            <a href=''><img src='src/menu.png' class=menu-icon></img></a>
+            <a id = logo-svg href ='' style="width: 95px;margin:5px"></a>
+            <!-- <div href'' class=bag-icon></div> -->
+            <img src='src/menu-dots.png' class='menu-dots'>
+            <img src='src/bag-pink.png' class=menu-dots id=pink-bag>
+        </div>
+        <div class=mv-header-line2>
+            <div class=search>
+                <span class=search-icon></span>
+                <input autofocus class=input id=input placeholder="Search for Products, Brands etc.">
+            </div>
+        </div>
+
+
+    </div>
+    <div class = 'app'>
+
+        <div class=slides>
+            <div class= slide-container>
+                <span id=image-slider1></span>
+                <span id=image-slider2></span>
+                <span id=image-slider3></span>
+                <div class= image-container>
+                    <img class=slider-image src='src/slide1.jpg'>
+                    <img class=slider-image src='src/slide2.jpg'>
+                    <img class=slider-image src='src/slide3.jpg'>
+
+                </div>
+                <div class=button-container>
+                    <a href="#image-slider1" class="slider-button"></a>
+                    <a href="#image-slider2" class="slider-button"></a>
+                    <a href="#image-slider3" class="slider-button"></a>
+                </div>
+            </div>
+        </div>
+        <div class=baner-container id=baner-container>
+            <img class=baner src='src/banner1.jpg'>
+        </div>
+
+        <div class=spotlight>
+            <div class=inside-spotlight id=inside-spotlight>
+                <h2 class=spotlight-h2 id=spotlight-h2>IN THE SPOTLIGHT</h2>
+                <div class=spotlight-banner id=spotlight-banner>
+                    <img class=spotlight-banner-img src='src/spot1.jpg'>
+                    <div class=banner-content id=banner-content>
+                        <div class=inner-content>
+                            <span class=discount>Flat 30% OFF </span><br>
+                            <span class=discription> Only for today!! </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=spotlight-banner id=spotlight-banner>
+                        <img class=spotlight-banner-img src='src/spot2.jpg'>
+                        <div class=banner-content id=banner-content>
+                        <div class=inner-content>
+                            <span class=discount>Free glow masking kit </span><br>
+                            <span class=discription>  On Purchase Of Rs.1100 & Above </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=spotlight-banner id=spotlight-banner>
+                        <img class=spotlight-banner-img src='src/spot3.jpg'>
+                        <div class=banner-content id=banner-content>
+                        <div class=inner-content>
+                            <span class=discount>Free glow masking kit </span><br>
+                            <span class=discription>  On Purchase Of Rs.1100 & Above </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=spotlight-banner id=spotlight-banner>
+                        <img class=spotlight-banner-img src='src/spot4.jpg'>
+                        <div class=banner-content id=banner-content>
+                        <div class=inner-content>
+                            <span class=discount>Free glow masking kit </span><br>
+                            <span class=discription>  On Purchase Of Rs.1100 & Above </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=focus>
+            <div class=inside-spotlight>
+                <h2 class=spotlight-h2 id=spotlight-h2>Category In Focus</h2>
+                <img class=baner-1 src='src/banner2.jpg'>
+                
+            </div>
+        </div>
+        <div class=spotlight id=spotlight>
+            <div class=inside-spotlight-1>
+                <div class=spotlight-header>
+                    <h2 class=spotlight-h2 id=spotlight-h2>Buying Guides</h2>
+                    <a href='' id=view-all>VIEW ALL ></a>
+                </div>
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/1.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                The Stunning Bridal Beauty Store 
+                            </div>
+                            <div id=guide-desc-2>
+                                Makeup, Skin & Hair Finds For Your Special Day 
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/2.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                    The Friends Of The Bride Edit 
+                                </div>
+                                <div id=guide-desc-2>
+                                    Big Day Beauty Prep For The Bride Tribe                             </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/3.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                    The Stunning Bridal Beauty Store 
+                                </div>
+                                <div id=guide-desc-2>
+                                    Makeup, Skin & Hair Finds For Your Special Day 
+                                </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/4.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                    The Stunning Bridal Beauty Store 
+                                </div>
+                                <div id=guide-desc-2>
+                                    Makeup, Skin & Hair Finds For Your Special Day 
+                                </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/5.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                    The Stunning Bridal Beauty Store 
+                                </div>
+                                <div id=guide-desc-2>
+                                    Makeup, Skin & Hair Finds For Your Special Day 
+                                </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/6.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                    The Stunning Bridal Beauty Store 
+                                </div>
+                                <div id=guide-desc-2>
+                                    Makeup, Skin & Hair Finds For Your Special Day 
+                                </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/7.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                    The Stunning Bridal Beauty Store 
+                                </div>
+                                <div id=guide-desc-2>
+                                    Makeup, Skin & Hair Finds For Your Special Day 
+                                </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href=''>
+                    <div class=guide-container id=guide-container>
+                        <div class=guide-image id=guide-image>
+                            <img id=spot-img src="src/8.jpg">
+                        </div>
+                        <div class=guide-desc id=guide-desc>
+                            <div id=guide-desc-1>
+                                    The Stunning Bridal Beauty Store 
+                                </div>
+                                <div id=guide-desc-2>
+                                    Makeup, Skin & Hair Finds For Your Special Day 
+                                </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class=footer>
+            <div class=footer-top>
+                <div class=contact>
+                    <div class=mail>
+                        <div class=flex>
+                            <div class=mail-icon></div>
+                            <h5>GET SPECIAL DISCOUNT IN YOUR INBOX</h5>
+                        </div>
+                        <div>
+                            <input class=mail-input type="email" placeholder="Enter Your Email Id">
+                            <input class=mail-send type="submit" value="SEND">
+                        </div>
+
+                    </div>
+                    <div class=mail>
+                        <div class=flex>
+                            <div class=phone-icon></div>
+                            <h5>EXPERIENCE THE NYKAA MOBILE APP</h5>
+                        </div>
+                        <div>
+                            <img class=google-play src='src/google-play.png'>
+                            <img class=google-play src='src/apple.png'>
+                        </div>
+                    </div>
+                    <div class=mail>
+                        <div class=flex>
+                            <div class=telephone-icon></div>
+                            <h5>for any help you may call us at<br>+91 922-220-1010</h5>
+                        </div>
+                        <div>
+                            <p>(Monday to Saturday, 9AM - 9PM)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=footer-2>
+                <div class=footer-2-inner>
+                    <div class=footer-2-cont>
+                        <div class=footer-2-cont-header>
+                            <img src='src/Nykaa.png'>
+                        </div>
+                        <div class=footer-2-cont-desc>
+                            <li>
+                                <a href=''>WHO ARE WE?</a>
+                            </li>
+                            <li>
+                                <a href=''>CAREERS </a>
+                            </li>
+                            <li>
+                                <a href=''>AUTHENTICITY</a>
+                            </li>
+                            <li>
+                                <a href=''>PRESS</a>
+                            </li>
+                            <li>
+                                <a href=''>TESTIMONIALS</a>
+                            </li>
+                            <li>
+                                <a href=''>NYKAA CSR</a>
+                            </li>
+                            <li>
+                                <a href=''>RESPONSIBLE DISCLOSURE</a>
+                            </li>
+
+                        </div>
+                    </div>
+                    <div class=footer-2-cont>
+                        <div class=footer-2-cont-header>
+                            <h4 id=text></h4> HELP</h4>
+                        </div>
+
+                        <div class=footer-2-cont-desc>
+                            <li>
+                                <a href=''>CONTACT US</a>
+                            </li>
+                            <li>
+                                <a href=''>FREQUENTLY ASKED QUESTIONS </a>
+                            </li>
+                            <li>
+                                <a href=''>STORE LOCATOR</a>
+                            </li>
+                            <li>
+                                <a href=''>CANCELLATION & RETURN</a>
+                            </li>
+                            <li>
+                                <a href=''>SHIPPING & DELIVERY</a>
+                            </li>
+            
+                        </div>
+                    </div>
+                    <div class=footer-2-cont>
+                        <div class=footer-2-cont-header>
+                            <h4 id=text></h4> inspire me</h4>
+                        </div>
+
+                        <div class=footer-2-cont-desc>
+                            <li>
+                                <a href=''>BEAUTY BOOK</a>
+                            </li>
+                            <li>
+                                <a href=''>Nykaa TV </a>
+                            </li>
+                            <li>
+                                <a href=''>Nykaa Network</a>
+                            </li>
+                            <li>
+                                <a href=''>Routine Finder</a>
+                            </li>
+                            <li>
+                                <a href=''>BUYING GUIDES</a>
+                            </li>
+            
+                        </div>
+                    </div>
+                    <div class=footer-2-cont id= footer-2-cont-4>
+                        <div class=footer-2-cont-header>
+                            <h4 id=text></h4> quick links</h4>
+                        </div>
+
+                        <div class=footer-2-cont-desc>
+                            <li>
+                                <a href=''>OFFER ZONE</a>
+                            </li>
+                            <li>
+                                <a href=''>NEW LAUNCHES </a>
+                            </li>
+                            <li>
+                                <a href=''>NYKAA MAN</a>
+                            </li>
+                            <li>
+                                <a href=''>NYKAA FASHION</a>
+                            </li>
+                            <li>
+                                <a href=''>NYKAA PRO</a>
+                            </li>
+                            <li>
+                                <a href=''>NYKAA FEMINA BEAUTY AWARDS WINNERS 2019</a>
+                            </li>
+                            <li>
+                                <a href=''>Sitemap</a>
+                            </li>
+            
+                        </div>
+                    </div>
+                <div class=footer-2-cont>
+                        <div class=footer-2-cont-header>
+                            <h4 id=text></h4> top categories</h4>
+                        </div>
+
+                        <div class=footer-2-cont-desc id=table-in-footer>
+                            <div style='width: 150px;'>
+                                <li>
+                                    <a href=''>Makeup</a>
+                                </li>
+                                <li>
+                                    <a href=''>Skin</a>
+                                </li>
+                                <li>
+                                    <a href=''>Hair</a>
+                                </li>
+                                <li>
+                                    <a href=''>Personal Care</a>
+                                </li>
+                                <li>
+                                    <a href=''>APPLIANCES</a>
+                                </li>
+                            </div>
+                            <div>
+                                <li>
+                                    <a href=''>Mom and Baby</a>
+                                </li>
+                                <li>
+                                    <a href=''>Wellness</a>
+                                </li>
+                                <li>
+                                    <a href=''>Fragrance</a>
+                                </li>
+                                <li>
+                                    <a href=''>NATURAL</a>
+                                </li>
+                                <li>
+                                    <a href=''>Luxe</a>
+                                </li>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=footer-3>
+                <div class=footer-3-inner>
+                    <div class=footer-3-cont>
+                        <div class=footer-3-cont-img>
+                            <img src='src/foot-1.png'>
+
+                        </div>
+                        <div>
+                            <div class=footer-3-cont-head>
+                                1500 + Brands
+
+                            </div>
+                            <div class=footer-3-cont-desc>
+                                Well Curated 3 Lakhs + Products
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=footer-3-cont>
+                        <div class=footer-3-cont-img>
+                            <img src='src/foot-2.png'>
+
+                        </div>
+                        <div>
+                            <div class=footer-3-cont-head>
+                                Free Shipping
+
+                            </div>
+                            <div class=footer-3-cont-desc>
+                                For Orders Above INR 500
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=footer-3-cont>
+                        <div class=footer-3-cont-img>
+                            <img src='src/foot-3.png'>
+
+                        </div>
+                        <div>
+                            <div class=footer-3-cont-head>
+                                Genuine Products
+                            </div>
+                            <div class=footer-3-cont-desc>
+                                Sourced Directly From Brands
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=follow-link>
+                        <div class=follow-link-desc>
+                            show us some love on social media
+                        </div>
+                        <div class=social-medias>
+                            <a class=social-media-icon id=instagram href=''></a>
+                            <a class=social-media-icon id=facebook href=''></a>
+                            <a class=social-media-icon id=youtube href=''></a>
+                            <a class=social-media-icon id=twitter href=''></a>
+                            <a class=social-media-icon id=pinterest href=''></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <div class=footer-last>
+                <div class=footer-last-cont>
+                    <div><a href=''>Terms & Conditions</a></div>
+                    <div><a href=''>Shipping Policy</a></div>
+                    <div><a href=''>Cancellation Policy</a></div>
+                    <div><a href=''>Privacy Policy</a></div>
+                </div>
+                <div class=copyright>
+                    © 2019 Nykaa E-Retail Pvt. Ltd. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=mv-footer id=mv-footer>
+        <div class='contact mv-footer' id=mv-footer-line-1>
+            <div class=mail>
+                <div class=flex>
+                    <div class=phone-icon></div>
+                    <h5>EXPERIENCE THE NYKAA MOBILE APP</h5>
+                </div>
+                <div>
+                    <img class=google-play src='src/google-play.png'>
+                    <img class=google-play src='src/apple.png'>
+                </div>
+            </div>
+        </div>
+        <div id=mv-footer-line-2>
+            <div class=footer-3-inner id=footer-3-inner>
+                <div class=footer-3-cont id=footer-3-cont>
+                    <div class=footer-3-cont-img id=footer-3-cont-img>
+                        <img src='src/foot-1.png'>
+
+                    </div>
+                    <div>
+                        <div class=footer-3-cont-head>
+                            1500 + Brands
+
+                        </div>
+                        <div class=footer-3-cont-desc id=footer-3-cont-desc>
+                            Well Curated 3 Lakhs + Products
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class=footer-3-cont id=footer-3-cont>
+                    <div class=footer-3-cont-img id=footer-3-cont-img>
+                        <img src='src/foot-2.png'>
+
+                    </div>
+                    <div>
+                        <div class=footer-3-cont-head>
+                            Free Shipping
+
+                        </div>
+                        <div class=footer-3-cont-desc id=footer-3-cont-desc>
+                            For Orders Above INR 500
+                        </div>
+                    </div>
+
+                </div>
+                <div class=footer-3-cont id=footer-3-cont>
+                    <div class=footer-3-cont-img id=footer-3-cont-img>
+                        <img src='src/foot-3.png'>
+
+                    </div>
+                    <div>
+                        <div class=footer-3-cont-head>
+                            Genuine Products
+                        </div>
+                        <div class=footer-3-cont-desc id=footer-3-cont-desc>
+                            Sourced Directly From Brands
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='contact mv-footer' id=mv-footer-line-3>
+            <div class=mail>
+                <div class=flex>
+                    <div class=mail-icon></div>
+                    <h5>GET SPECIAL DISCOUNT IN YOUR INBOX</h5>
+                </div>
+                <div>
+                    <input class=mail-input type="email" placeholder="Enter Your Email Id">
+                    <input class=mail-send type="submit" value="SEND">
+                </div>
+
+            </div>
+        </div>
+        <div class=mv-footer-last>
+            <a href='' ><div class=help-center>HELP CENTER</div></a>
+            <div class=copyright>
+                © 2019 Nykaa E-Retail Pvt. Ltd. All Rights Reserved
+            </div> 
+        
+    </div>
+                
+</body>
+</html>
